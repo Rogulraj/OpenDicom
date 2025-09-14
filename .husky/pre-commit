@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run linting
+echo "🔍 Running ESLint..."
+npx lint-staged
+
+# Run type checking
+echo "🔧 Running TypeScript type checking..."
+npx tsc --noEmit
+
+# Run tests for changed files
+echo "🧪 Running tests..."
+npx jest --bail --findRelatedTests --passWithNoTests
+
+# Check for DICOM file security
+echo "🏥 Checking for sensitive medical data..."
+if git diff --cached --name-only | grep -E "\.(dcm|dicom)$"; then
+  echo "❌ Error: DICOM files detected in commit. Please ensure no real patient data is included."
+  exit 1
+fi
+
+echo "✅ Pre-commit checks passed!"

@@ -1,0 +1,44 @@
+{
+  "name": "@opendicom/viewport",
+  "version": "0.1.0",
+  "description": "Viewport management and rendering for DICOM images",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "dicom",
+    "viewport",
+    "rendering",
+    "canvas"
+  ],
+  "author": "OpenDicom Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@opendicom/core": "^0.1.0",
+    "cornerstone-core": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.0",
+    "rimraf": "^5.0.0",
+    "rollup": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

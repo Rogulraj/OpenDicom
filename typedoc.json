@@ -1,0 +1,210 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "name": "OpenDICOM Medical Imaging Library",
+  "entryPoints": [
+    "packages/core/core/src/index.ts",
+    "packages/core/events/src/index.ts",
+    "packages/core/image-loader/src/index.ts",
+    "packages/core/ui/src/index.ts",
+    "packages/core/viewport/src/index.ts"
+  ],
+  "entryPointStrategy": "packages",
+  "out": "docs",
+  "theme": "default",
+  "customCss": "./docs/theme/medical-theme.css",
+  "includeVersion": true,
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "excludeProtected": false,
+  "excludeInternal": false,
+  "readme": "README.md",
+  "plugin": [
+    "typedoc-plugin-markdown",
+    "typedoc-plugin-merge-modules",
+    "@typedoc/plugin-pages"
+  ],
+  "gitRevision": "main",
+  "gitRemote": "origin",
+  "githubPages": true,
+  "hideGenerator": false,
+  "searchInComments": true,
+  "searchInDocuments": true,
+  "categorizeByGroup": true,
+  "defaultCategory": "Other",
+  "categoryOrder": [
+    "Core",
+    "Events",
+    "Image Loading",
+    "UI Components",
+    "Viewport",
+    "Medical Imaging",
+    "DICOM",
+    "Utilities",
+    "Types",
+    "Other"
+  ],
+  "sort": [
+    "source-order",
+    "alphabetical"
+  ],
+  "kindSortOrder": [
+    "Document",
+    "Project",
+    "Module",
+    "Namespace",
+    "Enum",
+    "EnumMember",
+    "Class",
+    "Interface",
+    "TypeAlias",
+    "Constructor",
+    "Property",
+    "Variable",
+    "Function",
+    "Accessor",
+    "Method",
+    "Parameter",
+    "TypeParameter",
+    "TypeLiteral",
+    "CallSignature",
+    "ConstructorSignature",
+    "IndexSignature",
+    "GetSignature",
+    "SetSignature"
+  ],
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true,
+    "includeFolders": true
+  },
+  "visibilityFilters": {
+    "protected": true,
+    "private": false,
+    "inherited": true,
+    "external": false,
+    "@alpha": false,
+    "@beta": true,
+    "@experimental": true,
+    "@internal": false
+  },
+  "searchCategoryBoosts": {
+    "Core": 1.5,
+    "Medical Imaging": 1.4,
+    "DICOM": 1.3,
+    "Image Loading": 1.2,
+    "Viewport": 1.1
+  },
+  "blockTags": [
+    "@override",
+    "@virtual",
+    "@privateRemarks",
+    "@sealed",
+    "@experimental",
+    "@alpha",
+    "@beta",
+    "@eventProperty",
+    "@example",
+    "@defaultValue",
+    "@typeParam",
+    "@param",
+    "@returns",
+    "@throws",
+    "@remarks",
+    "@see",
+    "@since",
+    "@deprecated",
+    "@internal",
+    "@public",
+    "@protected",
+    "@private",
+    "@readonly",
+    "@override",
+    "@virtual",
+    "@sealed",
+    "@static",
+    "@abstract"
+  ],
+  "inlineTags": [
+    "@link",
+    "@inheritDoc",
+    "@label"
+  ],
+  "modifierTags": [
+    "@override",
+    "@virtual",
+    "@sealed",
+    "@experimental",
+    "@alpha",
+    "@beta",
+    "@eventProperty",
+    "@internal",
+    "@readonly"
+  ],
+  "markedOptions": {
+    "mangle": false
+  },
+  "titleLink": "https://opendicom.dev",
+  "navigationLinks": {
+    "GitHub": "https://github.com/opendicom/opendicom",
+    "NPM": "https://www.npmjs.com/org/opendicom",
+    "Examples": "https://opendicom.dev/examples",
+    "Medical Standards": "https://www.dicomstandard.org/"
+  },
+  "sidebarLinks": {
+    "Getting Started": "https://opendicom.dev/getting-started",
+    "API Reference": "https://opendicom.dev/api",
+    "Medical Imaging Guide": "https://opendicom.dev/medical-imaging",
+    "DICOM Specification": "https://www.dicomstandard.org/current"
+  },
+  "hostedBaseUrl": "https://opendicom.dev/docs",
+  "cacheBust": true,
+  "cleanOutputDir": true,
+  "cname": "docs.opendicom.dev",
+  "gaID": "G-XXXXXXXXXX",
+  "includeHierarchySummary": true,
+  "lightHighlightTheme": "github-light",
+  "darkHighlightTheme": "github-dark",
+  "customFooterHtml": "<div class='medical-disclaimer'><p><strong>Medical Disclaimer:</strong> This software is intended for educational and research purposes only. It is not intended for clinical diagnosis or treatment. Always consult with qualified medical professionals for clinical applications.</p></div>",
+  "validation": {
+    "notExported": true,
+    "invalidLink": true,
+    "notDocumented": false
+  },
+  "requiredToBeDocumented": [
+    "Enum",
+    "EnumMember",
+    "Variable",
+    "Function",
+    "Class",
+    "Interface",
+    "Property",
+    "Method",
+    "Accessor"
+  ],
+  "treatWarningsAsErrors": false,
+  "treatValidationWarningsAsErrors": false,
+  "intentionallyNotExported": [
+    "InternalDicomParser",
+    "PrivateImageCache",
+    "InternalEventBus"
+  ],
+  "externalPattern": [
+    "**/node_modules/**"
+  ],
+  "excludePatterns": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/__tests__/**",
+    "**/__mocks__/**",
+    "**/test-utils/**",
+    "**/fixtures/**"
+  ],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@opendicom/image-loader",
+  "version": "0.1.0",
+  "description": "DICOM image loading and caching for medical imaging applications",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "dicom",
+    "medical-imaging",
+    "image-loader",
+    "healthcare",
+    "radiology"
+  ],
+  "author": "OpenDicom Team",
+  "license": "MIT",
+  "dependencies": {
+    "@opendicom/core": "^0.1.0",
+    "cornerstone-core": "^2.6.1",
+    "dcmjs": "^0.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
