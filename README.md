@@ -4,7 +4,6 @@
 
 [![CI/CD Pipeline](https://github.com/opendicom/dicom-viewer/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/opendicom/dicom-viewer/actions)
 [![codecov](https://codecov.io/gh/opendicom/dicom-viewer/branch/main/graph/badge.svg)](https://codecov.io/gh/opendicom/dicom-viewer)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🏥 Overview
 
@@ -187,11 +186,7 @@ npm run test -- --watch
 - 80 character line limit
 - Comprehensive JSDoc comments
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Cornerstone.js](https://cornerstonejs.org/) - Medical imaging rendering
 - [dcmjs](https://github.com/dcmjs-org/dcmjs) - DICOM parsing
@@ -199,10 +194,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: support@opendicom.org
-- 💬 Discussions: [GitHub Discussions](https://github.com/opendicom/dicom-viewer/discussions)
-- 🐛 Issues: [GitHub Issues](https://github.com/opendicom/dicom-viewer/issues)
-
+- 📧 Email: rogulraj@gmail.com
 ---
 
 **Made with ❤️ for the medical imaging community**
